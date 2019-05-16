@@ -1,7 +1,7 @@
 import React from 'react';
 import PageLayout from '../../layouts/PageLayout';
 
-const Zad2 = () => {
+const Exercise2 = () => {
   return (
     <PageLayout>
       Zad2
@@ -9,4 +9,4 @@ const Zad2 = () => {
   )
 }
 
-export default Zad2;
+export default Exercise2;

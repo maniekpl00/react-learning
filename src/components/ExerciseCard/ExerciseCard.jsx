@@ -3,10 +3,18 @@ import { Link } from 'react-router-dom';
 
 import styles from './ExerciseCard.scss';
 
-function ExerciseCard(props) {
+function ExerciseCard({ exercise, ...props }) {
+  const { path, name, description } = exercise;
+
   return (
     <section className={styles.exerciseCard}>
-      <Link to={props.exercise.path}>{props.exercise.name}</Link>
+      <h2>{name}</h2>
+      <div className={styles.data}>
+        <Link to={path}>
+          <em className={styles.route}>{path}</em>
+        </Link>
+        <p>Description - {description}</p>
+      </div>
     </section>
   );
 }
