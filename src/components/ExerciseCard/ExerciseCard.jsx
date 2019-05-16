@@ -10,9 +10,7 @@ function ExerciseCard({ exercise, ...props }) {
     <section className={styles.exerciseCard}>
       <h2>{name}</h2>
       <div className={styles.data}>
-        <Link to={path}>
-          <em className={styles.route}>{path}</em>
-        </Link>
+        <Link to={path}>{path}</Link>
         <p>Description - {description}</p>
       </div>
     </section>
