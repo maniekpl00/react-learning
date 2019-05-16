@@ -1,5 +1,5 @@
 import React from 'react';
-import PageLayout from '../../layouts/PageLayout';
+import PageLayout from '../../layouts/PageLayout/PageLayout';
 
 const Exercise2 = () => {
   return (

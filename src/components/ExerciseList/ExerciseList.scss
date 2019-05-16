@@ -1,7 +1,7 @@
 .exerciseList {
   display: flex;
-  min-height: 100vh;
+  height: 100%;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
 }

@@ -1,0 +1,21 @@
+@keyframes logoSlide {
+  0% {
+    background-image: url('../../assets/logo1.jpg');
+  }
+
+  40% {
+    background-image: url('../../assets/logo1.jpg');
+  }
+
+  50% {
+    background-image: url('../../assets/logo2.jpg');
+  }
+
+  90% {
+    background-image: url('../../assets/logo2.jpg');
+  }
+
+  100% {
+    background-image: url('../../assets/logo1.jpg');
+  }
+}

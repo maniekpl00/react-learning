@@ -1,17 +1,28 @@
 .exerciseCard {
   display: flex;
-  width: 300px;
   flex-direction: column;
   align-items: flex-start;
-  box-shadow: 0 0 3px 1px black;
+  width: 300px;
+  margin: 30px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 1px black;
 
-  h2 {
+  .name {
     width: 100%;
     padding: 10px 0;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     background-color: black;
     color: white;
+    user-select: none;
+    transition: 0.4s;
+    letter-spacing: 2px;
+
+    &:hover {
+      background-color: darkred;
+      letter-spacing: 4px;
+    }
   }
 
   .data {
@@ -23,11 +34,22 @@
     align-items: flex-start;
   }
 
-  a {
+  .description {
+    height: 80px;
+    overflow-y: auto;
+    font-size: 14px;
+  }
+
+  .link {
     background-color: royalblue;
     color: white;
     padding: 8px 10px;
     border-radius: 20px;
+    transition: 0.4s;
     user-select: none;
+
+    &:hover {
+      background-color: dodgerblue
+    }
   }
 }

@@ -8,10 +8,10 @@ function ExerciseCard({ exercise, ...props }) {
 
   return (
     <section className={styles.exerciseCard}>
-      <h2>{name}</h2>
+      <h2 className={styles.name}>{name}</h2>
       <div className={styles.data}>
-        <Link to={path}>{path}</Link>
-        <p>Description - {description}</p>
+        <Link className={styles.link} to={path}>{path}</Link>
+        <p className={styles.description}>{description}</p>
       </div>
     </section>
   );
