@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 
 import Navbar from './Navbar/Navbar';
 
-import style from './PageLayout.scss';
+import style from './ExerciseLayout.scss';
 
-class PageLayout extends Component {
+class ExerciseLayout extends Component {
   render() {
     const { children } = this.props;
 
     return (
-      <div className={style.appContainer}>
+      <div className={style.exerciseLayout}>
         <Navbar />
         <main className={style.childrenContainer}>{children}</main>
       </div>
@@ -17,4 +17,4 @@ class PageLayout extends Component {
   }
 }
 
-export default PageLayout;
+export default ExerciseLayout;

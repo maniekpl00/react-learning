@@ -5,8 +5,9 @@
   background-color: royalblue;
   border: 1px solid black;
   border-radius: 10px;
+  z-index: 2;
   
-  & a {
+  a {
     display: block;
     padding: 4px 7px;
     color: white;
