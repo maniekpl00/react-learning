@@ -1,0 +1,29 @@
+.navbar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 500;
+  
+  a {
+    display: block;
+    padding: 5px;
+    background-color: brown;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.4s;
+
+    &:hover {
+      background-color: crimson;
+    }
+  }
+
+  .ArrowLeft {
+    width: 25px;
+    height: 30px;
+    
+    path {
+      fill: white;
+    }
+  }
+}

@@ -7,6 +7,7 @@
   background-color: white;
   border-radius: 20px;
   box-shadow: 5px 5px 5px 1px black;
+  animation: scaleOnStart 0.3s linear;
 
   .name {
     width: 100%;
@@ -40,6 +41,12 @@
     font-size: 14px;
   }
 
+  .linkContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
   .link {
     background-color: royalblue;
     color: white;
@@ -49,7 +56,15 @@
     user-select: none;
 
     &:hover {
-      background-color: dodgerblue
+      background-color: dodgerblue;
+    }
+  }
+
+  .link:nth-of-type(2n) {
+    background-color: brown;
+
+    &:hover {
+      background-color: crimson;
     }
   }
 }

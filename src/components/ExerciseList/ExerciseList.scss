@@ -1,7 +1,10 @@
+@import 'animation';
+
 .exerciseList {
   display: flex;
   height: 100%;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
+  animation: scaleOnStart 0.4s ease;
 }
