@@ -2,16 +2,16 @@ import React, { Component } from 'react';
 
 import Navbar from './Navbar/Navbar';
 
-import style from './ExerciseLayout.scss';
+import styles from './ExerciseLayout.scss';
 
 class ExerciseLayout extends Component {
   render() {
     const { children } = this.props;
 
     return (
-      <div className={style.exerciseLayout}>
+      <div className={styles.exerciseLayout}>
         <Navbar />
-        <main className={style.childrenContainer}>{children}</main>
+        <main>{children}</main>
       </div>
     );
   }

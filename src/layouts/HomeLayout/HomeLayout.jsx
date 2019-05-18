@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { ReactComponent as GithubIcon } from '../../assets/svg/github-brands.svg';
 import { ReactComponent as LinkedinIcon } from '../../assets/svg/linkedin-brands.svg';
 
-import style from './HomeLayout.scss';
+import styles from './HomeLayout.scss';
+import HyperLink from '../../components/HyperLink/HyperLink';
 
 class HomeLayout extends Component {
   githubLink = 'https://www.github.com/maniekpl00';
@@ -12,28 +13,18 @@ class HomeLayout extends Component {
     const { children } = this.props;
 
     return (
-      <div className={style.homeLayout}>
-        <h2 className={style.author}>Trong Manh Tu</h2>
-        <div className={style.socialMedia}>
-          <a
-            className={style.link}
-            href={this.githubLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      <div className={styles.homeLayout}>
+        <h2 className={styles.author}>Trong Manh Tu</h2>
+        <div className={styles.socialMedia}>
+          <HyperLink className={styles.link} href={this.githubLink}>
             <GithubIcon />
-          </a>
-          <a
-            className={style.link}
-            href={this.linkedinLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          </HyperLink>
+          <HyperLink className={styles.link} href={this.linkedinLink}>
             <LinkedinIcon />
-          </a>
+          </HyperLink>
         </div>
-        <main className={style.children}>{children}</main>
-        <div className={style.overlay} />
+        <main className={styles.childrenContainer}>{children}</main>
+        <div className={styles.overlay} />
       </div>
     );
   }

@@ -1,0 +1,13 @@
+@keyframes scaleOnStart {
+  0% {
+    transform: scale(1)
+  }
+
+  60% {
+    transform: scale(0.8)
+  };
+
+  100% {
+    transform: scale(1)
+  };
+}
