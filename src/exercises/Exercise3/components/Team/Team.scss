@@ -1,0 +1,49 @@
+@import 'animation';
+
+$animationDuration: 40s;
+
+.Team {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  animation: vanishes 5s linear infinite;
+
+  & > * {
+    position: absolute;
+  }
+}
+
+.Gray {
+  left: 50%;
+  opacity: 0.4;
+  height: 100%;
+  filter: grayscale(100%);
+  animation: scales $animationDuration linear infinite;
+}
+
+.Color {
+  bottom: 0;
+  left: 60%;
+  width: 50%;
+  animation: moveCharacter calc(#{$animationDuration} * 2) linear infinite;
+}
+
+.Member {
+  top: 50px;
+  left: 50%;
+  text-align: center;
+
+  h2 {
+    text-transform: uppercase;
+  }
+}
+
+@media (orientation: landscape) {
+  .Gray {
+    left: 30%;
+  }
+  .Color {
+    width: 30%;
+  }
+}
