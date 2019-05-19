@@ -4,11 +4,22 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  animation: logoSlide 15s infinite linear;
   overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: logoSlide 15s infinite linear;
+    z-index: -1;
+  }
 }
 
 .author {
@@ -53,13 +64,4 @@ a {
   position: relative;
   flex-grow: 1;
   z-index: 1;
-}
-
-.overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.7);
 }

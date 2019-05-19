@@ -24,7 +24,6 @@ class HomeLayout extends Component {
           </HyperLink>
         </div>
         <main className={styles.childrenContainer}>{children}</main>
-        <div className={styles.overlay} />
       </div>
     );
   }
