@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './BuildControls.scss';
+import styles from './BuildControls.module.scss';
 import BuildControl from './BuildControl/BuildControl';
 
 const controls = [

@@ -1,0 +1,19 @@
+@import 'animation';
+
+.Spinner {
+  display: block;
+  width: 64px;
+  height: 64px;
+}
+.Spinner:after {
+  content: ' ';
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  border-color: black transparent #fff transparent;
+  animation: animateSpinner 1.2s linear infinite;
+}
+

@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import PropTypes from 'prop-types';
-import styles from './Modal.scss';
+import styles from './Modal.module.scss';
 import Backdrop from '../Backdrop/Backdrop';
 
 const Modal = props => {

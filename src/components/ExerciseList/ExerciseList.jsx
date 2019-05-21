@@ -1,7 +1,7 @@
 import React from 'react';
 import ExerciseCard from '../ExerciseCard/ExerciseCard';
 
-import styles from './ExerciseList.scss';
+import styles from './ExerciseList.module.scss';
 
 const ExerciseList = (props) => {
   return (

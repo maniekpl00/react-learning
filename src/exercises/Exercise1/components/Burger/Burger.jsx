@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Burger.scss';
+import styles from './Burger.module.scss';
 
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
 

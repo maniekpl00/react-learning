@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './BuildControl.scss';
+import styles from './BuildControl.module.scss';
 
 const BuildControl = props => {
   const { label, type, disabled } = props;

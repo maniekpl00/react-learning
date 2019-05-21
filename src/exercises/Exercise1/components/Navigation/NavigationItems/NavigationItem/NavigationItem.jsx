@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import styles from './NavigationItem.scss';
+import styles from './NavigationItem.module.scss';
 
 const NavigationItem = props => {
   return (

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Navbar from './Navbar/Navbar';
 
-import styles from './ExerciseLayout.scss';
+import styles from './ExerciseLayout.module.scss';
 
 class ExerciseLayout extends Component {
   render() {

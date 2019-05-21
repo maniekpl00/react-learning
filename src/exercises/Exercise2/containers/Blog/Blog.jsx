@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Post from '../../components/Post/Post';
 import FullPost from '../../components/FullPost/FullPost';
 import NewPost from '../../components/NewPost/NewPost';
-import styles from './Blog.scss';
+import styles from './Blog.module.scss';
 import jsonplaceholderApi from '../../api/jsonplaceholderApi';
 
 class Blog extends Component {

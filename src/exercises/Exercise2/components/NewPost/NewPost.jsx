@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import styles from './NewPost.scss';
+import styles from './NewPost.module.scss';
 import jsonplaceholderApi from '../../api/jsonplaceholderApi';
 
 class NewPost extends Component {
