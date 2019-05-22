@@ -1,0 +1,28 @@
+.Button {
+  position: fixed;
+  left: 50%;
+  top: 20%;
+  padding: 10px 20px;
+  transform: translate(-50%, -50%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.Error {
+  background-color: crimson;
+
+  &:hover {
+    background-color: brown;
+  }
+}
+
+.Success {
+  background-color: darkgreen;
+
+  &:hover {
+    background-color: green;
+  }
+}

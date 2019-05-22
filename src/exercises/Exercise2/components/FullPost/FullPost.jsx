@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import styles from './FullPost.scss';
+import styles from './FullPost.module.scss';
 import jsonplaceholderApi from '../../api/jsonplaceholderApi';
 import Loader from '../Loader/Loader';
 

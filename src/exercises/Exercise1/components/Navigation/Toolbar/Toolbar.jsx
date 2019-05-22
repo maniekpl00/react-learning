@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Toolbar.scss';
+import styles from './Toolbar.module.scss';
 import Logo from '../../Logo/Logo';
 import NavigationItems from '../NavigationItems/NavigationItems';
 import DrawerToggle from '../SideDrawer/DrawerToggle/DrawerToggle';

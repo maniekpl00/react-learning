@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { ReactComponent as GithubIcon } from '../../assets/svg/github-brands.svg';
 import { ReactComponent as LinkedinIcon } from '../../assets/svg/linkedin-brands.svg';
 
-import styles from './HomeLayout.scss';
+import styles from './HomeLayout.module.scss';
 import HyperLink from '../../components/HyperLink/HyperLink';
 
 class HomeLayout extends Component {

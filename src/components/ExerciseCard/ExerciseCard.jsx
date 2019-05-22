@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import styles from './ExerciseCard.scss';
+import styles from './ExerciseCard.module.scss';
 import HyperLink from '../HyperLink/HyperLink';
 
 function ExerciseCard({ exercise, ...props }) {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import styles from './Layout.scss';
+import styles from './Layout.module.scss';
 import Toolbar from '../components/Navigation/Toolbar/Toolbar';
 import SideDrawer from '../components/Navigation/SideDrawer/SideDrawer';
 
