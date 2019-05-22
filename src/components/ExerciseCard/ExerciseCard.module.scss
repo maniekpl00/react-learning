@@ -18,11 +18,11 @@
     color: white;
     user-select: none;
     transition: 0.4s;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 
     &:hover {
       background-color: darkred;
-      letter-spacing: 4px;
+      letter-spacing: 2px;
     }
   }
 

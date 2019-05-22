@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { throttle } from 'lodash';
 import todoApi, { axiosInstance, messages } from '../../api/todo/todoApi';
 import Todo from '../../components/Todo/Todo';
 import Spinner from '../../components/UI/Spinner/Spinner';
@@ -6,11 +7,15 @@ import Button from '../../components/UI/Button/Button';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 
 class TodoManager extends Component {
-  state = {
-    todo: null,
-    loading: true,
-    error: false
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      todo: null,
+      loading: true,
+      error: false
+    };
+    this.handleClick = throttle(this.handleClick, 2000, { trailing: false });
+  }
 
   componentDidMount() {
     this.fetchTodo();

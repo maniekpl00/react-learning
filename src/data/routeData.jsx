@@ -42,16 +42,16 @@ export default [
     Exercise3,
     `${REPOSITORY_URL}/Exercise3`,
     <>
-      Using animation: scale, translate, opacity.
+      Using animation: <em>scale, translate, opacity</em>.
     </>
   ),
   buildRoute(
-    'Error Handling',
+    'Error HTTP Handling',
     '/exercise4',
     Exercise4,
     `${REPOSITORY_URL}/Exercise4`,
     <>
-      Handling error, creating axios interceptors
+      Handling error by creating global axios interceptors <em>(withErrorHandler as HOC)</em>
     </>
   )
 ];
