@@ -4,7 +4,7 @@ import locale_en from 'react-intl/locale-data/en';
 import locale_pl from 'react-intl/locale-data/pl';
 import messages_en from '../../translations/en.json';
 import messages_pl from '../../translations/pl.json';
-import LanguageContext from './languageContext/languageContext';
+import LanguageContext from '../../contexts/languageContext/languageContext';
 
 addLocaleData([...locale_en, ...locale_pl]);
 
@@ -20,16 +20,19 @@ const withTranslation = WrappedComponent => {
     };
 
     handleLanguageChange = language => {
-      this.setState({ language: messages[language] });
+      this.setState({ language, messages: messages[language] });
     };
 
     render() {
       const { language } = this.state;
+      const context = {
+        language,
+        languages: Object.keys(messages),
+        changed: this.handleLanguageChange
+      };
 
       return (
-        <LanguageContext.Provider
-          value={{ language: this.state.language, changed: this.handleLanguageChange }}
-        >
+        <LanguageContext.Provider value={context}>
           <IntlProvider locale={language} messages={messages[language]}>
             <WrappedComponent {...this.props} />
           </IntlProvider>

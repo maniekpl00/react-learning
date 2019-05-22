@@ -52,7 +52,8 @@ export default [
     Exercise4,
     `${REPOSITORY_URL}/Exercise4`,
     <>
-      Handling error by creating global axios interceptors <em>(withErrorHandler as HOC)</em>
+      Handling error by creating global axios interceptors{' '}
+      <em>(withErrorHandler as HOC)</em>, using throttle to block button.
     </>
   ),
   buildRoute(
@@ -61,7 +62,7 @@ export default [
     Exercise6,
     `${REPOSITORY_URL}/Exercise6`,
     <>
-      Translate text on event onClick
+      Translate text on event onClick with using: <em>react-intl, uuid, Context API</em>
     </>
   )
 ];

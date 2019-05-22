@@ -9,7 +9,7 @@ function ExerciseCard({ exercise, ...props }) {
 
   return (
     <section className={styles.exerciseCard}>
-      <h2 className={styles.name}>{name}</h2>
+      <h3 className={styles.name}>{name}</h3>
       <div className={styles.data}>
         <div className={styles.linkContainer}>
           <Link className={styles.link} to={path}>
