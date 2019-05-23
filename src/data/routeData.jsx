@@ -3,6 +3,7 @@ import Exercise1 from '../exercises/Exercise1/Exercise1';
 import Exercise2 from '../exercises/Exercise2/Exercise2';
 import Exercise3 from '../exercises/Exercise3/Exercise3';
 import Exercise4 from '../exercises/Exercise4/Exercise4';
+import Exercise5 from '../exercises/Exercise5/Exercise5';
 import Exercise6 from '../exercises/Exercise6/Exercise6';
 
 const REPOSITORY_URL = 'https://github.com/maniekpl00/react-learning/tree/master/src/exercises';
@@ -57,12 +58,21 @@ export default [
     </>
   ),
   buildRoute(
+    'Routing understanding',
+    '/exercise5',
+    Exercise5,
+    `${REPOSITORY_URL}/Exercise5`,
+    <>
+      Routing, redirect, history, withRouter, loading routes lazily by asyncComponent
+    </>
+  ),
+  buildRoute(
     'React translation (pl, en)',
     '/exercise6',
     Exercise6,
     `${REPOSITORY_URL}/Exercise6`,
     <>
-      Translate text on event onClick with using: <em>react-intl, uuid, Context API</em>
+      Translate text on event onClick with using: <em>react-intl, uuid, Context API, useContext</em>
     </>
   )
 ];

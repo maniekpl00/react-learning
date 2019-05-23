@@ -1,0 +1,21 @@
+.Navigation {
+  ul {
+    list-style-type: none;
+    display: flex;
+  }
+
+
+  a {
+    background-color: crimson;
+    padding: 10px 20px;
+    color: black;
+
+    &:hover {
+      background-color: brown;
+    }
+
+    &.Active {
+      color: white;
+    }
+  }
+}
