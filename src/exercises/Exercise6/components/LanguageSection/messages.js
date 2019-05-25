@@ -1,6 +1,6 @@
 import { defineMessages } from 'react-intl';
 
-const scope = 'languageSection';
+const scope = 'LanguageSection';
 
 const messages = defineMessages({
   title: {

@@ -1,14 +1,15 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import styles from './NavigationItems.module.scss';
 import NavigationItem from './NavigationItem/NavigationItem';
 
-const NavigationItems = () => {
+const NavigationItems = props => {
   return (
     <ul className={styles.NavigationItems}>
-      <NavigationItem>Burger Builder</NavigationItem>
-      <NavigationItem>Burger</NavigationItem>
+      <NavigationItem to={props.match.url}>Burger Builder</NavigationItem>
+      <NavigationItem to={`${props.match.url}/orders`}>Orders</NavigationItem>
     </ul>
   );
 };
 
-export default NavigationItems;
+export default withRouter(NavigationItems);

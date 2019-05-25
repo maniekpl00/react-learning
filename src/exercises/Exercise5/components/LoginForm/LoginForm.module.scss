@@ -1,0 +1,35 @@
+.LoginForm {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  margin: 0 auto;
+  align-items: center;
+
+  button {
+    width: 100px;
+    padding: 5px 0;
+    background-color: transparent;
+    border: 1px solid black;
+    outline: none;
+    transition: 0.4s;
+
+    &:hover {
+      cursor: alias;
+      color: white;
+      background-color: black;
+    }
+  }
+}
+
+.Label {
+  margin-bottom: 10px;
+
+  span {
+    display: block;
+    padding: 5px 0;
+  }
+
+  input {
+    padding: 5px 10px;
+  }
+}

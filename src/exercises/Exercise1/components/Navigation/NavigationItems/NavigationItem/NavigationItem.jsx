@@ -6,13 +6,14 @@ import styles from './NavigationItem.module.scss';
 const NavigationItem = props => {
   return (
     <li className={styles.NavigationItem}>
-      <Link to="#">{props.children}</Link>
+      <Link to={props.to}>{props.children}</Link>
     </li>
   );
 };
 
 NavigationItem.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
+  to: PropTypes.string.isRequired
 };
 
 export default React.memo(NavigationItem);

@@ -1,0 +1,22 @@
+.Navigation {
+  ul {
+    list-style-type: none;
+    display: flex;
+  }
+
+  li {
+    margin-right: 10px;
+  }
+
+  a {
+    padding: 10px 20px;
+    color: black;
+    border-bottom: 2px solid;
+    border-bottom-color: transparent;
+
+    &:hover,
+    &.Active {
+      border-bottom-color: black;
+    }
+  }
+}
