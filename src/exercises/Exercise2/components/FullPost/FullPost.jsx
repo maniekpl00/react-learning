@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import styles from './FullPost.module.scss';
 import jsonplaceholderApi from '../../api/jsonplaceholderApi';
-import Loader from '../Loader/Loader';
+import Spinner from '../../../../components/Spinner/Spinner';
 
 class FullPost extends Component {
   state = {
@@ -57,7 +57,7 @@ class FullPost extends Component {
           </div>
         </div>
       ) : (
-        <Loader style={{ margin: '0 auto' }} />
+        <Spinner style={{ margin: '0 auto' }} />
       );
     }
 
