@@ -20,7 +20,7 @@ export default [
     `${REPOSITORY_URL}/Exercise1`,
     <>
       Building a Burger Ingredients Page with using{' '}
-      <em>React Hooks, React.Memo, useState, useMemo, PropTypes.</em>.
+      <em>React Hooks, React.Memo, useState, useMemo, PropTypes, Firebase, nested Routes.</em>.
     </>
   ),
   buildRoute(
@@ -65,6 +65,15 @@ export default [
     `${REPOSITORY_URL}/Exercise6`,
     <>
       Translate text on event onClick with using: <em>react-intl, uuid, Context API, useContext</em>
+    </>
+  ),
+  buildRoute(
+    'Counter App',
+    '/exercise7',
+    lazy(() => import("../exercises/Exercise7/Exercise7")),
+    `${REPOSITORY_URL}/Exercise7`,
+    <>
+      React Redux (redux, react-redux)
     </>
   )
 ];

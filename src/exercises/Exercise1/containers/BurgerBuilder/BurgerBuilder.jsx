@@ -21,9 +21,8 @@ function BurgerBuilder(props) {
     purchasing,
     handlePurchasing,
     handleCancelPurchasing,
-    handleContinuePurchasing,
+    handleContinuePurchasing
   } = usePurchasing(false, props);
-
 
   const disabledInfo = () => {
     const disabledInfo = { ...ingredientsData.ingredients };
@@ -31,7 +30,7 @@ function BurgerBuilder(props) {
       disabledInfo[key] = disabledInfo[key] <= 0;
     }
     return disabledInfo;
-  }
+  };
 
   return !loading && ingredientsData ? (
     <>
@@ -40,10 +39,12 @@ function BurgerBuilder(props) {
           ingredients={ingredientsData.ingredients}
           price={totalPrice}
           purchaseCanceled={handleCancelPurchasing}
-          purchaseContinued={() => handleContinuePurchasing(ingredientsData.ingredients, totalPrice)}
+          purchaseContinued={() =>
+            handleContinuePurchasing(ingredientsData.ingredients, totalPrice)
+          }
         />
       </Modal>
-      <div style={{ height: '300px', marginTop: "50px", flexGrow: "1" }}>
+      <div style={{ height: '300px', marginTop: '50px' }}>
         <Burger ingredients={ingredientsData.ingredients} />
       </div>
       <BuildControls

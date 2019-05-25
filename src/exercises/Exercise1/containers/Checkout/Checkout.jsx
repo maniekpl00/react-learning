@@ -30,7 +30,7 @@ function Checkout(props) {
   };
 
   const checkoutContinuedHandler = () => {
-    props.history.replace(`checkout/contact-data`);
+    props.history.replace(`${props.match.url}/contact-data`);
   };
   if (!state.ingredients) {
     return <Spinner />;

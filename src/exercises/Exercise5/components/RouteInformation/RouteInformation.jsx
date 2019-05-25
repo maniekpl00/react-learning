@@ -25,7 +25,10 @@ function RouteInformation(props) {
         <strong>props.match.url:</strong> {props.match.url}
       </p>
       <p>
-        <strong>props.match.path:</strong>: {props.match.path}
+        <strong>props.match.path:</strong> {props.match.path}
+      </p>
+      <p>
+        <strong>props.match.params.id:</strong> {props.match.params.id}
       </p>
       <p>
         <strong>props.location.pathname:</strong> {props.location.pathname}
