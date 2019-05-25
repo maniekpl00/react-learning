@@ -4,18 +4,19 @@
     display: flex;
   }
 
+  li {
+    margin-right: 10px;
+  }
 
   a {
-    background-color: crimson;
     padding: 10px 20px;
     color: black;
+    border-bottom: 2px solid;
+    border-bottom-color: transparent;
 
-    &:hover {
-      background-color: brown;
-    }
-
+    &:hover,
     &.Active {
-      color: white;
+      border-bottom-color: black;
     }
   }
 }
