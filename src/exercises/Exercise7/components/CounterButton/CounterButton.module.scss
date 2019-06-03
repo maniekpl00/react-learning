@@ -1,0 +1,19 @@
+.CounterButton {
+  width: 20%;
+  margin: 0 2.5%;
+  padding: 10px 0;
+  font-size: 20px;
+  background-color: darkgoldenrod;
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  transition: 0.4s;
+  
+  &:hover:enabled {
+    cursor: pointer;
+    background-color: chocolate;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}

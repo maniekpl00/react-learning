@@ -1,0 +1,16 @@
+.CounterInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+
+  span {
+    text-transform: uppercase;
+  }
+
+  input {
+    margin: 5px 0;
+    padding: 5px 10px;
+    font-size: 18px;
+  }
+}
